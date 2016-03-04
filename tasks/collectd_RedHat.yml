@@ -1,6 +1,6 @@
 ---
 - name: Epel repo installation
-  yum: yum: name=epel-release state=present
+  yum: name=epel-release state=latest
 
 - name: Install CollectD on RedHat OS family
   yum: name={{ item.package }}
