@@ -1,6 +1,6 @@
 ---
 - name: Install CollectD on RedHat OS family
-  yum: name={{ item.package }} 
+  yum: name={{ item.package }}
        state=latest
   with_items: collectd_packages_RedHat
   tags:
